@@ -2,12 +2,21 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../weed_magnifyer.jpg';
 
 export default function Navivation() {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Strain Search</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img
+            src={logo}
+            width="70"
+            height="70"
+            className="d-inline-block align-top"
+            alt="Strain Search"
+          />
+        </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="mr-auto">
