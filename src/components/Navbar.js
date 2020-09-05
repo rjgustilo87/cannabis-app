@@ -13,6 +13,7 @@ export default function Navivation() {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/brands">Brands</Nav.Link>
+            <Nav.Link href="/strains">Strains</Nav.Link>
             <NavDropdown title="Products">
               <NavDropdown.Item href="/products/flowers">Flowers</NavDropdown.Item>
               <NavDropdown.Item href="/products/extracts">Extracts</NavDropdown.Item>

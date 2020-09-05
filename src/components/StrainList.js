@@ -1,14 +1,14 @@
 import React from "react";
-// import Strain from "./Strain";
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 function StrainList({ strains }) {
   // console.log(strains);
   
   return (
     <CardGroup>
-    {strains.map((item) => (
+    {strains.data.map((item) => (
         <Card style={{ minWidth: '290px', minHeight: '200px' }}>
           <Card.Header>
             <Card.Title>{item.name}</Card.Title>
@@ -18,7 +18,7 @@ function StrainList({ strains }) {
             <Card.Text>Brand: {item.seedCompany.name}</Card.Text>
             <Card.Text>Genetics: {item.genetics.names}</Card.Text>
             <Card.Text>
-              <Card.Link href={item.url} target="_blank">Cannabis Report</Card.Link>
+              <Button variant="success" href={item.url} target="_blank">Cannabis Report</Button>
             </Card.Text>
           </Card.Body>
           <Card.Footer>

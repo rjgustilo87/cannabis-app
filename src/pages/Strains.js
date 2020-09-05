@@ -1,6 +1,6 @@
 import React from 'react';
 import StrainList from "../components/StrainList";
-const strainsURL = 'https://api.otreeba.com/v1/strains?page=1&count=50&sort=name';
+const strainsURL = 'https://api.otreeba.com/v1/strains?page=1&count=20&sort=name';
 
 class Strains extends React.Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class Strains extends React.Component {
           (result) => {
             this.setState({
               isLoaded: true,
-              items: result.data
+              items: result
             });
           },
           // Note: it's important to handle errors here
